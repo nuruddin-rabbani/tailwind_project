@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://static-00.iconduck.com/assets.00/file-type-favicon-icon-2048x2048-q7lmo5fn.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>News | Ticker AI</title>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+    <!-- Header Section -->
+    <header class="py-3 px-2">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <a href="index.html"><img src="images/Logo.png" alt=""></a>
+                <p class="hidden md:block text-xs md:text-sm dark:text-white">A Mark Cuban Company <br>
+                    AI-based Financial Market News Aggregator</br>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="">
+                    <button
+                        class="py-1 px-3 bg-[#5677AC] rounded-md text-white hover:scale-105 duration-300">Personalize
+                        News</button>
+                </a>
+                <button
+                    class="px-3 py-1 rounded-full text-white font-bold bg-[#5677AC] hover:scale-105 duration-300">IK</button>
+                <svg id="switch" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 hover:stroke-[#5677AC] dark:stroke-white hover:scale-105 duration-300">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                </svg>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="bg-gray-100 lg:pt-5 h-[90vh] dark:bg-gray-800 px-2">
+        <div class="container mx-auto relative">
+            <div class="border-b-2 border-slate-700 dark:border-white pb-2 pt-6">
+                <h2 class="text-xl md:text-3xl font-semibold md:font-bold dark:text-white">Personalize your news</h2>
+            </div>
+
+            <div
+                class="bg-white dark:bg-slate-400 w-full lg:w-1/3  py-10 px-4 absolute top-[100px] start-1/2 translate-x-[-50%] space-y-4 rounded-xl">
+                <h4 class="font-semibold text-center text-xl mb-8">Select Your Markets</h4>
+                <p class="nav-head">Stocks</p>
+                <p class="nav-head">Crypto</p>
+                <p class="nav-head">Economy & Business</p>
+                <p class="nav-head">Commodities | Forex</p>
+                <p class="nav-head">Fixed Income</p>
+                <p
+                    class="bg-[#5677AC] hover:bg-[#375381] text-center py-4 rounded-xl text-white font-bold cursor-pointer dark:hover:bg-blue-900">
+                    Continue</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 dark:text-white">
+        <p class="text-center text-xs md:text-xl font-semibold"> Coyprights &copy;2024 Hablu-Programmer | All Rights
+            Reserved.</p>
+    </footer>
+
+    <script>
+        const htmlTag = document.getElementById('htmlTag')
+        document.getElementById('switch').addEventListener('click', function () {
+            htmlTag.classList.toggle('dark')
+        })
+    </script>
+</body>
+
+</html>
